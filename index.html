@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/Images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/CSS/index.css">
-    <title>Online E-Mail Validator</title>
+    <title>Online E-Mail Validator For Your Emails</title>
 </head>
 <body> 
     <header>
         <nav>
             <div>
                 <a href="/index.html"><img src="/Images/logo.png" alt="Mail-Dekho"></a>
-                <p>Mail Dekho</p>
+                <p class="hText">Mail Dekho</p>
             </div>
         </nav>
     </header>
@@ -20,26 +20,31 @@
     <main>
         <!-- Creating Input Section For Taking Input From User -->
         <section>
-            <div class="box">
-                <div>
-                    <input type="email" placeholder="Enter Your Email For Validation" required>
+            <form action="">
+                <div class="box">
+                    <div>
+                        <input id="username" type="email" placeholder="Enter Your Email For Validation" required>
+                    </div>
+                    <div>
+                        <button id="submit">Get InFo</button>
+                    </div>
                 </div>
-                <div>
-                    <button id="submit">Get InFo</button>
-                </div>
-            </div>
+            </form>
         </section>
 
         <!-- Creating Section For Details After Fetching Data From API -->
         <section>
-            <div class="box1">
-
+            <div class="box0">
+                <div id="resBox"></div>
             </div>
         </section>
     </main>
 
     <footer>
-
+        <div class="fBox">
+            <p class="fText">2023 &copy; - All Rights Reserved</p>
+            <p class="fText">Mail - Dekho</p>
+        </div>
     </footer>
 </body>
 <script src="/Js/index.js"></script>
